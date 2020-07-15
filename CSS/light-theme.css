@@ -1,0 +1,70 @@
+.light-theme {
+
+    background: rgba(230 ,230, 230, 0.8);
+    color: black;
+}
+
+.light-theme .header {
+
+    background: #2ecc71;
+    box-shadow: 0px 5px 10px 0px rgba(0,180,0,0.4);
+}
+
+.light-theme h1 {
+
+    color: white;
+}
+
+.light-theme #submenu {
+
+    background: #3e8e41;
+}
+
+.light-theme .mouse-position {
+
+    background: green;
+    box-shadow: 0px 5px 10px 0px rgba(0,150,0,0.5);
+}
+
+.light-theme .date {
+
+    background: #2ecc71;
+    box-shadow: 0px 5px 10px 0px rgba(0,150,0,0.5);
+}
+
+.light-theme input[type="text"] {
+
+    color: black;
+    font-weight: bold;
+}
+
+.light-theme ._button {
+
+    color: black;
+    font-weight: bold;
+}
+
+.light-theme ._button:hover {
+
+    color: white;
+}
+
+.light-theme div {
+
+    background: white;
+}
+
+.light-theme hr {
+
+    border: 1px solid #2ecc71;
+}
+
+.light-theme .search-list .list em {
+    
+    color: white;
+}
+
+.light-theme .search-list .list {
+
+    background: #2ecc71;
+}

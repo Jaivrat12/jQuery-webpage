@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background: #202020;
+    color: white;
+}
+
+.header {
+
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 12px;
+    border-radius: 0;
+    box-shadow: 0px 8px 16px 0px rgba(109, 0, 255, 0.6);
+    background: indigo;
+}
+
+h1 {
+
+    padding-left: 3%;
+    text-align: center;
+}
+
+.mouse-position {
+
+    margin-left: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(109, 0, 255, 0.6);
+    border-radius: 0 25px 25px 0;
+    background: indigo;
+    height: 55px;
+    width: 158px;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.date {
+
+    margin-right: 0;
+    position: fixed;
+    top: 56px;
+    right: 0;
+    box-shadow: 0px 8px 16px 0px rgba(109, 0, 255, 0.6);
+    border-radius: 25px 0 0 25px;
+    background: #6D00FF;
+    height: 55px;
+    width: 158px;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/*div and inner heading(h2) */
+
+div {
+
+    margin: 15px 10px;
+    padding: 10px;
+    background: rgba(50, 50, 50, 0.5);
+    border-radius: 10px;
+}
+
+h2 {
+    
+    margin: 10px;
+    text-align: center;
+}
+
+
+/*Search Engine - Search Bar and Button like Anchor('Go!')*/
+input[type="text"] {
+
+    border: 0;
+    background: none;
+    display: block;
+    margin: -8px auto;
+    margin-bottom: 2%;
+    text-align: center;
+    border: 3px solid #6D00FF;
+    padding: 14px 0px;
+    width: 60vw;
+    outline: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+input[type="text"]:focus {
+
+    width: 70vw;
+    border-color: #2ecc71;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+._button {
+
+    cursor: pointer;
+    margin: -1% 42% 20px;
+    padding: 6px 10px;
+    display: block;
+    background: none;
+    border: 3px solid #2ecc71;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    outline: none;
+    color: white;
+    text-align: center;
+    transition: 0.4s;
+    transition: transform 0.4s;
+    transition-timing-function: ease;
+}
+
+.search-list ._button {
+
+    margin: auto;
+}
+
+._button:hover {
+
+    background: #2ecc71;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+._button:active {
+
+    transform: scale(0.8);
+}
+
+hr {
+
+    border: 1px solid #6D00FF;
+}
+
+.search-list .list {
+
+    background: #6D00FF;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+
+.search-list .list li {
+
+    background: white;
+    margin: 10px;
+    padding: 8px;
+    border: 3px solid;
+    border-radius: 40px;
+    list-style: none;
+    overflow-wrap: break-word;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.search-list .addToSearchBar {
+
+    display: inline;
+    margin: 2.5px;
+    color: black;
+}
+
+.search-list .addToSearchBar:hover {
+
+    color: white;
+}
+
+.search-list .remove {
+
+    display: inline;
+    margin: 2.5px;
+    border: 3px solid red;
+    color: black;
+}
+
+.search-list .remove:hover {
+
+    background: red;
+    color: white;
+}

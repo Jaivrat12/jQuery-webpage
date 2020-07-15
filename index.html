@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!--META DATA-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--MY CSS FILE(S)-->
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/light-theme.css">
+        <link rel="stylesheet" href="CSS/theme-switch.css">
+        <link rel="stylesheet" href="CSS/options.css">
+        
+        <!--JQUERY LIBRARY-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="lib/jquery.min.js"></script>
+        
+        <!--MY JS FILE(S)-->
+        <script src="JS/script.js"></script>
+        
+        <!--DOCUMENT TITLE-->
+        <title>TEST JQUERY</title>
+        
+    </head>
+    
+    <body class="light-theme">
+        
+        <div class="header">
+            <div class="menu">
+                <span id="item">
+                    <img src="Assets/options-img.png" alt="Options" class="options" title="Options">
+                </span>
+                <div id="submenu">
+                    <div class="switch-theme">
+                        <b>Dark Mode</b>
+                        <br>
+                        <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="time-display">
+                        <b>Show Time</b>
+                        <br>
+                        <label class="switch">
+                            <input type="checkbox" checked />
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="mouse-pos-display">
+                        <b>Show Mouse Position</b>
+                        <br>
+                        <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="new-tab">
+                        <b>Open Search in New Tab</b>
+                        <br>
+                        <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <h1>
+                jQuery - TEST #0
+            </h1>
+        </div>
+        
+        <div class="mouse-position">
+            Mouse Position:
+            <br>
+            0, 0
+        </div>
+
+        <div class="date">
+            Today: 00-00-0000
+            <br>
+            Time: 00:00:00
+        </div>
+        
+        <div class="search-engine">
+            <h2>Search Engine</h2>
+            <br>
+            <input type="text" placeholder="Search on Google" title="Works like the Google's Search Bar!" oninput="getLink()">
+            <a class="_button" title="Search for Results!" onclick="checkSearchBar()">Go!</a>
+        </div>
+
+        <div class="search-list">
+            <h2>Your Favorite Searches</h2>
+            <br>
+            <input type="text" placeholder="New Favorite Search" />
+            <button class="_button">Add Search</button>
+            <br>
+            <hr>
+            <div class="list">
+                <em>You Haven't Added any Favorite Searches Yet...</em>
+                <ul id="mylist"></ul>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
