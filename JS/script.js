@@ -1,5 +1,7 @@
 $(function() {
-
+	
+	src = "Assets/close-options-img.png";
+	
 	$(".mouse-position").hide();
 
 	$("html").on("mouseover click", function(event) {
